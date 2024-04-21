@@ -1,9 +1,10 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://agencia_viajes:password@localhost:28017/agencia_viajes?authSource=admin
+      host: localhost
+      port: 27017
   application:
-    name: basic-service-mongodb
+    name: hotelMicroservice
 server:
   port: ${SERVER_PORT:8082}
 eureka:
