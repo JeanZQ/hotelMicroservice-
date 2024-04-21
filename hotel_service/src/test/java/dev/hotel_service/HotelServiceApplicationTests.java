@@ -1,4 +1,4 @@
-package java.dev.hotel_service;
+package dev.hotel_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

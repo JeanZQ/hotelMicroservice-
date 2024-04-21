@@ -1,4 +1,4 @@
-package java.dev.hotel_service.client.basic_service;
+package dev.hotel_service.client.basic_service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
