@@ -1,9 +1,7 @@
-package java.dev.hotelMicroservice.database.documents;
+package java.dev.hotel_service.database.documents;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.Collection;
 
 @Document(collection = "hotelRoom")
 public class HotelRoom {

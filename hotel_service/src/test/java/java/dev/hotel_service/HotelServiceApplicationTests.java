@@ -1,10 +1,10 @@
-package java.dev.hotelMicroservice;
+package java.dev.hotel_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HotelMicroserviceApplicationTests {
+class HotelServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
