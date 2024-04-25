@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  springbootapp:
+    image: openjdk:17-jdk-slim
+    container_name: springboot_container
+    working_dir: /app
+    volumes:
+      - ./target:/app
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/my_database
+      SPRING_DATASOURCE_USERNAME: my_user
+      SPRING_DATASOURCE_PASSWORD: my_password
+    command: ["java", "-jar", "hotel_service.jar"]
+
+  postgres:
+    image: postgres
+    container_name: postgres_container
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: my_database
+      POSTGRES_USER: my_user
+      POSTGRES_PASSWORD: my_password
+
